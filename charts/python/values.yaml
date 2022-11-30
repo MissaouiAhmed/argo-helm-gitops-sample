@@ -1,0 +1,21 @@
+replicaCount: 1
+image:
+  pullPolicy: IfNotPresent
+  repository: rocker/rstudio
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+service:
+  name: http
+  type: NodePort
+  externalPort: 8787
+  internalPort: 8787
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+ingress:
+  enabled: false
