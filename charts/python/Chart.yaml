@@ -1,4 +1,4 @@
 apiVersion: v1
 description: A Helm chart for argoCD
-name: python
-version: v0.3.0
+name: rstudio
+version: v0.0.1
