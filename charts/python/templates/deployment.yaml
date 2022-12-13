@@ -6,7 +6,6 @@ metadata:
     draft: {{ default "draft-app" .Values.draft }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
     app: {{ template "fullname" . }}
-    hpecp.hpe.com/hpecp-internal-gateway: "true"
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
