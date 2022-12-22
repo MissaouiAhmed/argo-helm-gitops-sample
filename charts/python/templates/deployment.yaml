@@ -16,6 +16,7 @@ spec:
       labels:
         draft: {{ default "draft-app" .Values.draft }}
         app: {{ template "fullname" . }}
+        hpecp.hpe.com/fsmount: {{ .Values.tenantName }}
     spec:
     {{- if .Values.image.pullSecret }}
       imagePullSecrets:
